@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>I.E.E Érico Veríssimo - Síntese de Pesquisa</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5b9cb009e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/svg" href="img/logo2.svg">
+    <script>
+        function entrar() {
+            var user = document.getElementById('user1').value
+            var senha = document.getElementById('senha1').value
+            var acesso = document.getElementById('acesso1').value
+            if (user === 'nicolasomelhor' && senha == 528491 && acesso == 'adm' ) {
+                document.getElementById('resultado').innerHTML = ' <a class="btn btn-outline-warning btn-block btn-lg mt-3 mb-3" href="doc/Síntese de Pesquisa.pdf"><i style="font-size: 18px; margin-right: 5px;" class="fa-solid fa-file-pdf"></i>Documento Síntese de Pesquisa</a> <h6><i style="font-size: 18px; margin-right: 5px;" class="fa-solid fa-file-pdf"></i>Acesso para o documento PDF</h6>'
+            } else {
+                document.getElementById('resultado').innerHTML = '  <span class="text-center"><strong>Senha ou usuário ou acesso incorreto(s)</strong></span>'
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="mt-4 mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center align-self-center mb-3">
+                    <h3 class="box py-3">Síntese de Pesquisa</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container texto-box">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6><i style="font-size: 18px; margin-right: 5px;" class="fa-solid fa-user"></i>Digite seu Usuário</h6>
+                    <input required class="form-control mb-3" type="text" name="ul" id="user1" placeholder="Digite seu usuário">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h6><i style="font-size: 18px; margin-right: 5px;" class="fa-solid fa-lock"></i>Digite sua Senha</h6>
+                    <input required class="form-control" type="password" name="sl" id="senha1" placeholder="Digite sua senha">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h6> <i style="font-size: 18px; margin-right: 5px;" class="fa-regular fa-address-card"></i>Digite seu Acesso</h6>
+                    <input class="form-control" type="text" name="num" id="acesso1" placeholder="digite seu acesso" required>
+                </div>
+                <div class="col-md-6 text-center align-self-center mt-auto mb-3">
+                    <input class="btn btn-outline-warning btn-block" type="submit" value="entrar" onclick="entrar()">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container texto-box mb-4" id="resultado">
+            <div class="row">
+                <div id="resultado" class="col-md-12">
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center align-self-center mt-4">
+                    <a class="btn btn-outline-light" href="https://www.facebook.com/ericotrespassos/?locale=pt_BR"><img
+                            style="width: 55px;" class="img-fluid" src="img/logo.svg"></a>
+                    <span>
+                        <strong>(55) 3522 - 2417</strong>
+                    </span>
+                </div>
+                <div class="col-md-4 text-center align-self-center mt-4">
+                    <span>
+                        <strong><i style="color: black; margin-right: 5px; font-size: 18px;"
+                                class="fa-solid fa-location-dot"></i>R. Gáspar Silveira Martins, 1510 - Érico Veríssimo,
+                            Três Passos.</strong>
+                    </span>
+                </div>
+                <div class="col-md-4 text-center align-self-center mt-4 mb-4">
+                    <span>
+                        <strong><i style="margin-right: 5px; font-size: 18px; color: black;"
+                                class="fa-solid fa-user"></i>Atendimento: Seg a Sex, 7h30 às 22h30.</strong>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mt-5">
+                    <h6><i style="margin-right: 5px; font-size: 18px; color: black;"
+                            class="fa-solid fa-microchip"></i>Desenvolvido por Nicolas Dorneles & Arthur Rhoden.</h6>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

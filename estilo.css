@@ -1,0 +1,46 @@
+body{
+    font-family: poppins;
+}
+
+
+.quad{
+    border: 1px solid yellow;
+    border-radius: 20px;
+}
+
+.ds, .le{
+    color: white;
+}
+
+.box{
+   background-color: #ffc107;
+   color: white;
+
+}
+
+.espaço{
+    margin-left: 3px;
+}
+
+.texto{
+    font-size: 18px;
+    border: 1px solid #ffc107;
+    padding: 10px;
+}
+
+footer{
+    background-color: #ffc107;
+    height: auto;
+}
+
+.texto-box{
+    border: 1px solid #ffc107;
+    padding: 10px;
+}
+
+.base{
+    border-bottom: 1px solid #ffc107;
+    margin-top: 17px;
+}
+
+
